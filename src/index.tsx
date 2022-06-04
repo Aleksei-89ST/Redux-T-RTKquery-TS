@@ -7,8 +7,8 @@ const store = setupStore();
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-<Provider store={store}>
-  root.render(
-  <App />
-  );
-</Provider>;
+root.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
