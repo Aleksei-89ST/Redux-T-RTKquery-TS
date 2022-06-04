@@ -1,4 +1,4 @@
-// описал простую модель для работы с user
+// типизирую state - описал простую модель для работы с user
 export interface IUser {
   id: number;
   name: string;

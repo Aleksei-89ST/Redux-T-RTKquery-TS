@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
-import userReducer from './reducers/useSlice'
+import userReducer from './reducers/userSlice'
 
+// сосдаю корневой редусер - обьеденяет все редусеры в один
 const rootReducer = combineReducers({
 userReducer
 })
