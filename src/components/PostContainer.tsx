@@ -43,7 +43,8 @@ const handleUpdate = (post: IPost) => {
           {/* <button onClick={() => refetch()}>REFETCH</button> */}
         {isLoading && <h1>Идёт загрузка...</h1>}
         {error && <h1>Произошла ошибка при загрузке</h1>}
-        {posts && posts.map((post) => <PostItem post={post} key={post.id} />)}
+        {posts && posts.map((post) =>  <PostItem remove={handleRemove} update={handleUpdate} key={post.id} post={post}/>
+        )}
       </div>
     </div>
   );
